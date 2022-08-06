@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="abk_customer_type_view_list">
+            <field name="name">Customer Type List</field>
+            <field name="model">abk.customer.type</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="abk_customer_type_view_form" model="ir.ui.view">
+            <field name="model">abk.customer.type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="abk_customer_type_action_window">
+            <field name="name">Customer Type</field>
+            <field name="res_model">abk.customer.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Top menu item -->
+        <!-- <menuitem id="customer_type_menu_root" name="Customer Type" action="abk_customer_type_action_window"/> -->
+    </data>
+</odoo>

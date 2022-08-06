@@ -1,0 +1,8 @@
+<odoo>
+    <data>
+     <record model="abk.customer.type" id="abk_agent_type_view_list">
+             <field name="name">Agent</field>
+             <field name="description">Description</field>
+     </record>
+    </data>
+</odoo>

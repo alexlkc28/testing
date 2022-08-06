@@ -1,0 +1,35 @@
+<odoo>
+  <data>
+<!--    <record id="view_purchase_order_form_update_process" model="ir.ui.view">-->
+<!--            <field name="name">purchase.order.form</field>-->
+<!--            <field name="model">purchase.order</field>-->
+<!--            <field name="type">form</field>-->
+<!--            <field name="inherit_id" ref="purchase.purchase_order_form"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//field[@name='currency_id']" position="after">-->
+<!--                    <field name="customer_id"/>-->
+<!--                </xpath>-->
+
+<!--                <page name="products" position="after">-->
+<!--                    <page string="Sales" attrs="{'invisible': [('customer_id', '=', False)]}">-->
+<!--                        <field name="sale_order_list" mode="tree" widget="section_and_note_one2many"/>-->
+<!--                    </page>-->
+<!--                </page>-->
+<!--            </field>-->
+<!--        </record>-->
+
+<!--      <record id="view_sale_order_form_update_process" model="ir.ui.view">-->
+<!--            <field name="name">sale.order.form</field>-->
+<!--            <field name="model">sale.order</field>-->
+<!--            <field name="type">form</field>-->
+<!--            <field name="inherit_id" ref="sale.view_order_form"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <page name="order_lines" position="after">-->
+<!--                    <page string="Purchase" attrs="{'invisible': [('partner_id', '=', False)]}">-->
+<!--                        <field name="purchase_order_list" mode="tree" widget="section_and_note_one2many"/>-->
+<!--                    </page>-->
+<!--                </page>-->
+<!--            </field>-->
+<!--        </record>-->
+  </data>
+</odoo>

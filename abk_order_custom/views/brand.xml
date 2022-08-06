@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="abk_brand_view_list" model="ir.ui.view">
+            <field name="model">abk.brand</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence" widget="handle" />
+                    <field name="name" />
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="abk_brand_view_form" model="ir.ui.view">
+            <field name="model">abk.brand</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                             <group>
+                                <field name="sequence" invisible="1"/>
+                                <field name="name"/>
+                                <field name="description"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="abk_brand_action" model="ir.actions.act_window">
+            <field name="name">Brand</field>
+            <field name="res_model">abk.brand</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

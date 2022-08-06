@@ -1,0 +1,35 @@
+<odoo>
+  <data>
+    <record id="view_sale_order_form_abk_sale_order" model="ir.ui.view">
+            <field name="name">sale.order.form.abk.sale.order</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group/group" position="inside">
+                    <field name="paid" placeholder="Paid"/>
+                    <field name="remaining" placeholder="Remaining"/>
+                    <field name="payment_schedule" placeholder="Select option"/>
+                    <field name="can_deliver" placeholder="Select option"/>
+                    <!--<field name="wos_address_id" placeholder="Select option"/>-->
+                </xpath>
+            </field>
+        </record>
+
+      <record id="view_stock_picking_form" model="ir.ui.view">
+            <field name="name">stock.picking.form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="before">
+                     <field name="delivery_warning" invisible='1'/>
+                </xpath>
+                <xpath expr="//sheet/div[@name='button_box']" position="after">
+                    <div class="oe_title alert alert-danger" role="alert" style="margin-bottom: 10px;font-weight: bold;text-align: center;color: black;" attrs="{'invisible': [('delivery_warning','!=',True)]}">
+                    The Customer's Credit Limit has been crossed
+                </div>
+                </xpath>
+            </field>
+        </record>
+  </data>
+</odoo>

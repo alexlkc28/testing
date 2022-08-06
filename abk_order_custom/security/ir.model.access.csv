@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_abk_brand,abk.brand,model_abk_brand,base.group_user,1,1,1,1
+access_abk_product_class,abk.product.class,model_abk_product_class,base.group_user,1,1,1,1
+access_abk_warranty,abk.warranty,model_abk_warranty,base.group_user,1,1,1,1
+access_abk_head_analysis,abk.head.analysis,model_abk_head_analysis,base.group_user,1,1,1,1
+access_abk_material_analysis,abk.material.analysis,model_abk_material_analysis,base.group_user,1,1,1,1
+access_abk_reference_category,abk.reference.category,model_abk_reference_category,base.group_user,1,1,1,1
+access_abk_hscommodity,abk.hscommodity,model_abk_hscommodity,base.group_user,1,1,1,1
+access_abk_fscclaim,abk.fscclaim,model_abk_fscclaim,base.group_user,1,1,1,1
